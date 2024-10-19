@@ -7,6 +7,10 @@
 </select>
 <button>Click me</button>
 
+<div style="height: 1200px;">
+
+</div>
+
 <style lang="scss">
     // @use '../styles/functions';
     // @use '@unsass/breakpoint';

@@ -21,8 +21,8 @@ export const GET: RequestHandler = async ({ cookies, fetch }) => {
     const responseJSON = await response.json();
 
     if(responseJSON.error) {
-        cookies.delete('access_token');
-        cookies.delete('refresh_token');
+        cookies.delete('access_token', { path: '/' });
+        cookies.delete('refresh_token', { path: '/' });
         error(401, responseJSON.error_description);
     }
 
